@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="../../static/js/exif.min.js"></script>
+  <script src="../../static/js/processImg.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/varbar.css"/>
+  <style>
+
+	.imageFrame{
+		width: 50%;
+		position: relative;
+		margin-top: 15%;
+		margin-left: 25%;
+		border: 6px solid #c8c8c8;
+		background:rgba(0,0,0,0.3);
+	}
+	.imageFrame input{
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 0;
+		background: none;
+		width: 100%;
+		height:100%;
+	}
+	.imageFrame input[type="file"]{
+		opacity:0;
+	}
+	.imageFrame img{
+		width: 100%;
+		display: block;
+	}
+  </style>
+</head>
+<body>
+  <div class="imageFrame">
+      <input name="upimage" id="upimage" type="file">
+      <input type="button" id="upimageButton" onclick="upimage.click()">
+      <img id="showimage" src="../../static/images/upload.jpg" alt="">
+  </div>
+  <div style="display:block;">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+      compressImg('upimage','showimage',480,function(src) {
+          console.log(src);
+          $.ajax({
+              type: "post",
+              url: "/wear/",
+              data: {'imgurl': src},
+              dataType:'json',
+              success:function (data) {
+									document.getElementById("showimage").src="result.jpg";
+              },
+              error: function (XMLHttpRequest, textStatus, errorThrown) {
+                  alert(XMLHttpRequest.status);
+                  alert(XMLHttpRequest.readyState);
+                  alert(textStatus);
+
+              }
+          });
+
+          });
+
+    </script>
+</body>
+</html>

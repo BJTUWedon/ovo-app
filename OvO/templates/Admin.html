@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>complete your information</title>
+</head>
+<body>
+<h1>complete your information</h1>
+    <form action="/add_user" method="post">
+
+        <div class="form-group">
+				<label for="index1">name</label>
+				<input type="text" class="form-control" id="name" placeholder="name" name="name">
+			</div>
+
+        <div class="form-group">
+				<label for="index2">password</label>
+				<input type="text" class="form-contro2" id="password" placeholder="password" name="password">
+			</div>
+
+        <span>
+				<label for="index3">sex</label>
+			</span>
+			<select class="form-contro3" id="sex_choice">
+				<option>male</option>
+				<option>female</option>
+
+			</select>
+
+        <span>
+				<label for="index4">age</label>
+			</span>
+			<select class="form-contro4" id="age_choice">
+				<option>1-18</option>
+				<option>18-35</option>
+                <option>35+</option>
+
+			</select>
+
+        <span>
+				<label for="index5">age</label>
+			</span>
+			<select class="form-contro5" id="character_choice">
+				<option>outgoing</option>
+				<option>eligent</option>
+                <option>mature</option>
+                <option>citizen</option>
+
+			</select>
+
+
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+</html>
