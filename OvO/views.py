@@ -4,7 +4,7 @@ from urllib import urlencode
 from Face_Analysis.access_token import key
 
 def home(request):
-    return render_to_response('home.html')
+    return render_to_response('../templates/home.html')
 
 def Wear_Glass(request):
     if request.method == 'GET':
