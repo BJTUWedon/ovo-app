@@ -1,0 +1,133 @@
+body
+{
+text-align:center;
+    /* 文字居中 */
+background-color: #FFE4B5;
+
+}
+ul
+{
+list-style-type:none; /* ul前面的点  */
+}
+*
+{
+margin: 0px  0px;     /* 到边框的距离 */
+}
+.menu
+{
+background:#4682B4; /* 导航条背景的颜色  */
+}
+.nav
+{
+margin:0 auto; 	/* 导航栏文字的位置  */
+width:100%; 	/* 和文字宽度有关，不能小于文字宽度的总和  */
+height:3rem; 	/* 导航栏的宽度  */
+line-height:200%;
+/* 字体大小 */
+color: black;
+}
+.nav p{
+  text-align: center;
+}
+
+
+.fenxi {
+    background-color: #008B8B; //下拉主按钮的颜色
+    color: white;
+    padding: 3%;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow:#191970;
+}
+
+.panbie {
+    background-color: tomato;  //下拉主按钮的颜色
+    color: white;
+    padding: 3%;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow:#B22222;
+}
+
+.shidai {
+    background-color: #FFFF00;  //下拉主按钮的颜色
+    color: white;
+    padding: 3%;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow:orange;
+}
+
+.goujing {
+    background-color: #4CAF50;  //下拉主按钮的颜色
+    color: white;
+    padding: 3%;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: #6b8123;
+    -moz-box-shadow: #6b8123;
+    box-shadow: #6b8123;
+}
+
+.lishi {
+    background-color: #006400;  //下拉主按钮的颜色
+    color: white;
+    padding: 3%;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: forestgreen;
+}
+
+.lianxi {
+    background-color: #9932CC;  //下拉主按钮的颜色
+    color: white;
+    padding: 3%;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: #4b0082;
+    -moz-box-shadow: #4b0082;
+    box-shadow: #4b0082;
+}
+.form{
+  padding-top: 30%;
+}
+
+table
+{
+	width:100%;
+}
+
+td
+{
+    text-align:center;
+}
+
+table, td, th
+{
+	border:1px solid #6495DE;
+}
+.result{
+  width: 50%;
+  margin-top: 20%;
+  margin-left: 25%;
+  font-size: 4rem;
+  color:#333333;
+  border-width: 0.5rem;
+  border-color: #999999;
+  border-collapse: collapse;
+  table-layout: fixed;
+  word-wrap:break-word;
+}
+.result th td{
+  width: 50%
+  border-width: 0.5rem;
+  padding: 0.8rem;
+  border-style: solid;
+  border-color: #999999;
+}
