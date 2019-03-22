@@ -18,7 +18,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '6l@j#jlk$grfrxixxp_v=lqp1xly!w7^-=7w$yd%0vwa8#g7-_'
-
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__) , 'templates').replace('\\','/')
+)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
